@@ -2,8 +2,7 @@
 
 using namespace std;
 
-// 基于 C++11，函数返回值不支持 auto
-char* Hello()
+auto Hello()
 {
     char* h = "hello,world";
     return h;
