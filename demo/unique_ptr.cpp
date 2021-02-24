@@ -20,8 +20,9 @@ public:
 int main()
 {
     char name[20] = "张三";
-    std::shared_ptr<Person> ps(new Person(name, 20));
+    std::unique_ptr<Person> ps(new Person(name, 20));
     cout << ps->getName() << endl;
     cout << ps->getAge() << endl;
-    std::shared_ptr<Person> ss(ps);
+    // 这种写法 shared_ptr 支持，unique_ptr 不支持
+    // std::unique_ptr<Person> ss(ps);
 }
