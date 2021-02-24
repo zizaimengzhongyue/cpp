@@ -1,7 +1,8 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int a = 10;
     float b = 1.23;
     double c = 1.234234234324234;
@@ -19,7 +20,8 @@ int main() {
     cout << d << endl;
     cout << "字符型：";
     cout << e << endl;
-    cout << "字符串，通过向一个字符指针赋值声明，该声明方式会触发一个 deprecated 的报警：";
+    cout << "字符串，通过向一个字符指针赋值声明，该声明方式会触发一个 "
+            "deprecated 的报警：";
     cout << f << endl;
     cout << "字符串，赋值给字符数组的方式声明：";
     cout << g << endl;
